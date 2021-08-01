@@ -102,5 +102,9 @@ body {
     font-weight: bold;
     border-bottom: 3px double #ccc ;
     margin-bottom: 2%;
-
+}
+.h2-menu{
+    font-weight: bold;
+    border-bottom: 3px double #ccc ;
+    margin-bottom: 5%;
 }
