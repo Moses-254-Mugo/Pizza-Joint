@@ -46,7 +46,7 @@
 
     <!-- Container (Menu Section) -->
     <div class="container" id="gallery">
-        <h2 class="text-center">MENU</h2>
+        <h2 class="text-center h2-menu">MENU</h2>
         <div class="row">
             <div class="col-sm-4 text-center">
                 <div class="thumbnail">
@@ -77,6 +77,60 @@
                 </div>
                 
             </div>
+        </div>
+    </div>
+      <!-- Container (Order Section) -->
+      <div class="container mt-lg-4" name="order_Section">
+        <h3 class="text-center">Make an Order</h3>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form action="#" id="order" class="text-center">
+                    <div class="form-group">
+                        <label for="pizza-size">Choose the Size of the Pizza</label>
+                        <select class="form-control" name="size" required>
+                            <option value="regular">Regular</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Choose Your favorite Crust: </label>
+                        <select class="form-control" name="crust">
+                            <option value="Custom @ Ksh 85" data-item-price="85">Custom @ Ksh 85</option>
+                            <option value="Flatbread @ Ksh 75" data-item-price="75">Flatbread @ Ksh 75</option>
+                            <option value="Thin @ Ksh 80" data-item-price="80">Thin @ Ksh 80</option>
+                            <option value="Thick @ Ksh 90" data-item-price="90">Thick @ Ksh 90</option>
+                    
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Your favorite Toppings:</label>
+                        <select class="form-control" name="topping" required>
+                            <option value="Onions @ Ksh 90" data-item-price="90">Onions @ Ksh 90</option>
+                            <option value="Mushroom @ Ksh 80" data-item-price="80">Mushroom @ Ksh 80</option>
+                            <option value="Tomato @ Ksh 75" data-item-price="75">Tomato @ Ksh 75</option>
+                            <option value="Green Paper @ Ksh 80" data-item-price="75">Green Paper @ Ksh 80</option>
+                            <option value=""></option>
+                            <option value="Beef @ Ksh 200" data-item-price="200">Beef @ Ksh 200</option>
+                            <option value="Chicken @ Ksh 170" data-item-price="170">Chicken @ Ksh 170</option>
+                            <option value="Pineapple @ Ksh 120" data-item-price="120">Pineapple @ Ksh 120</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>Choose Number of Pizza you want</label>
+                        <input type="number" name="quantity" class="form-control" placeholder="Number of pizza" min="1" required>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-lg-2">
+                        <!-- <a href="#order_Summary"> -->
+                            <button type="submit" name="submitOrder" class="btn btn-success" id="checkOrder">Check Order</button>
+                        <!-- </a> -->
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
         </div>
     </div>
 
