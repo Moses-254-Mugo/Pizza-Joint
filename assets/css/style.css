@@ -83,3 +83,13 @@ body {
       display: flex;
     }
   }
+  /* Style Home Section */
+  .banner {
+    background: url("../images/pizzahomepage.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 40px;
+    width: 100%;
+    /* height: auto; */
+    color: #fff;
+  }
