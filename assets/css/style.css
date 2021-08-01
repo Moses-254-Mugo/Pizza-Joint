@@ -84,7 +84,7 @@ body {
     }
   }
   /* Style Home Section */
-  .banner {
+  #home {
     background: url("../images/pizzahomepage.jpg") no-repeat;
     background-size: cover;
     background-position: center;
@@ -95,3 +95,12 @@ body {
   #colortxt{
     color: yellow;
   }
+  /* Style gallery section */
+#gallery{
+    padding: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    border-bottom: 3px double #ccc ;
+    margin-bottom: 2%;
+
+}
