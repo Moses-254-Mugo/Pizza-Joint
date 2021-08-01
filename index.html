@@ -11,8 +11,8 @@
     <title>Pizza Joint</title>
 </head>
 <body>
-     <!-- Container (Navigation Section) -->
-     <nav class="navbar">
+      <!-- Container (Navigation Section) -->
+      <nav class="navbar">
         <div class="logo">Italiano <span id="colortxt">Pizza </span> Joint</div>
 
         <a href="#" class="toggle-button">
@@ -28,9 +28,8 @@
             </ul>
         </div>
     </nav>
-
     <!-- Container (Home Section) -->
-    <div class="container-fluid" id="home">
+    <div class="container" id="home">
         <div class="banner">
             <div class="row">
                 <div class="col-sm-6"></div>
@@ -42,11 +41,10 @@
                 </div>
             </div>
         </div>
-    </div> 
-
+    </div>     
     <!-- Container (Menu Section) -->
     <div class="container" id="gallery">
-        <h2 class="text-center h2-menu">MENU</h2>
+        <h2 class="text-center">MENU</h2>
         <div class="row">
             <div class="col-sm-4 text-center">
                 <div class="thumbnail">
@@ -79,8 +77,9 @@
             </div>
         </div>
     </div>
-      <!-- Container (Order Section) -->
-      <div class="container mt-lg-4" name="order_Section">
+
+    <!-- Container (Order Section) -->
+    <div class="container mt-lg-4" name="order_Section">
         <h3 class="text-center">Make an Order</h3>
         <div class="row">
             <div class="col-sm-2"></div>
@@ -133,8 +132,9 @@
             <div class="col-sm-2"></div>
         </div>
     </div>
-     <!-- container (order summary) -->
-     <div class="container mt-lg-2 d-none" id="order_Summary">
+
+    <!-- container (order summary) -->
+    <div class="container mt-lg-2 d-none" id="order_Summary">
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
@@ -177,8 +177,9 @@
             </div>
         </div>
     </div>
-     <!-- container delivery alert -->
-     <div class="container">
+
+    <!-- container delivery alert -->
+    <div class="container">
         <div class="d-flex justify-content-center">
             <div class="alert alert-success d-none mt-lg-5">
                 <div class="alert-body">
@@ -187,6 +188,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Container (Contact Section) -->
     <div class="container" id="contact">
         <h2 class="text-center mb-5">CONTACT</h2>
@@ -198,25 +200,31 @@
                 <p><span class="glyphicon glypicon-envelope"></span>moseskinyua12@gmail.com</p>
             </div>
             <div class="col-sm-7">
-                <form>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Name...">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Email...">
+                    </div>
+                    <textarea id="txtArea" class="form-control"  rows="10" placeholder="Comment"></textarea>
                     <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input type="text" id="name" class="form-control" placeholder="Name...">
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input type="email" id="email" class="form-control" placeholder="Email...">
-                        </div>
-                        <textarea id="txtArea" class="form-control"  rows="10" placeholder="Comment"></textarea>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <button id="btn" class="btn btn-default pull-left" type="submit">Send</button>
-                            </div>
+                        <div class="col-sm-12 form-group">
+                            <button id="btn" class="btn btn-default pull-left" type="submit">Send</button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
+
+
+<!--- Main container ended here-->
+<!-- Footer -->
+<footer>
+    <h5>&copy2021 The Italliano Pizza Joint</h5>
+</footer>
+
 
 
     <script src="./assets/js/jQuery.js"></script>
