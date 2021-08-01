@@ -144,3 +144,13 @@ input[type="number"] {
   color: #fff;
   font-size: 19px;
 }
+/* Style contact section */
+#contact {
+  padding: 50px;
+  margin: 30px;
+  background: url("../images/footer_image2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: yellow;
+  font-size: 19px;
+}
