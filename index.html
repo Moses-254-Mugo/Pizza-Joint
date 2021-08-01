@@ -6,16 +6,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.min.js" ></script>
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Pizza Joint</title>
 </head>
 <body>
-    
+      <!-- Container (Navigation Section) -->
+      <nav class="navbar">
+        <div class="logo">Italiano <span id="colortxt">Pizza </span> Joint</div>
 
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Container (Home Section) -->
+    <div class="container-fluid" id="home">
+        <div class="banner">
+            <div class="row">
+                <div class="col-sm-6"></div>
+                
+                <div class="col-sm-6">
+                    <h1>Welcome to Italliona Pizza!!!</h1>
+                    <p>The best pizza you'll ever get</p>
+                    <p>Make an order of your pizza now will deliver it to your door step.</p>
+                </div>
+            </div>
+        </div>
+    </div>     
+    <!-- Container (Menu Section) -->
+    <div class="container" id="gallery">
+        <h2 class="text-center h2-menu">MENU</h2>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <div class="thumbnail">
+                    <img src="./assets/images/Normalpizza.jpg" class="img-thumbnail"  alt="" style="width: 280px; height: 200px;">
+                   
+                    <div class="desc">
+                        <h5>Normal</h5>
+                        <p>Ksh 300</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="thumbnail">
+                    <img src="./assets/images/Mediumpizza.jpeg" class="img-thumbnail"  alt="" style="width: 280px; height: 200px;">
+                    <div class="desc">
+                        <h5>Medium</h5>
+                         <p>Ksh 600</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="thumbnail">
+                    <img src="./assets/images/large_pizza1.jpg" class="img-thumbnail"  alt="" style="width: 280px; height: 200px;">
+                    <div class="desc">
+                        <h5>Large</h5>
+                        <p>Ksh 1200</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Order Section) -->
+    <div class="container mt-lg-4" name="order_Section">
+        <h3 class="text-center h3-makeOrder">Make an Order</h3>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form action="#" id="order" class="text-center">
+                    <div class="form-group">
+                        <label for="pizza-size">Choose the Size of the Pizza</label>
+                        <select class="form-control" name="size" required>
+                            <option value="regular">Regular</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Choose Your favorite Crust: </label>
+                        <select class="form-control" name="crust">
+                            <option value="Custom @ Ksh 85" data-item-price="85">Custom @ Ksh 85</option>
+                            <option value="Flatbread @ Ksh 75" data-item-price="75">Flatbread @ Ksh 75</option>
+                            <option value="Thin @ Ksh 80" data-item-price="80">Thin @ Ksh 80</option>
+                            <option value="Thick @ Ksh 90" data-item-price="90">Thick @ Ksh 90</option>
+                    
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Your favorite Toppings:</label>
+                        <select class="form-control" name="topping" required>
+                            <option value="Onions @ Ksh 90" data-item-price="90">Onions @ Ksh 90</option>
+                            <option value="Mushroom @ Ksh 80" data-item-price="80">Mushroom @ Ksh 80</option>
+                            <option value="Tomato @ Ksh 75" data-item-price="75">Tomato @ Ksh 75</option>
+                            <option value="Green Paper @ Ksh 80" data-item-price="75">Green Paper @ Ksh 80</option>
+                            <option value=""></option>
+                            <option value="Beef @ Ksh 200" data-item-price="200">Beef @ Ksh 200</option>
+                            <option value="Chicken @ Ksh 170" data-item-price="170">Chicken @ Ksh 170</option>
+                            <option value="Pineapple @ Ksh 120" data-item-price="120">Pineapple @ Ksh 120</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>Choose Number of Pizza you want</label>
+                        <input type="number" name="quantity" class="form-control" placeholder="Number of pizza" min="1" required>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-lg-2">
+                        <!-- <a href="#order_Summary"> -->
+                            <button type="submit" name="submitOrder" class="btn btn-success" id="checkOrder">Check Order</button>
+                        <!-- </a> -->
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <!-- container (order summary) -->
+    <div class="container mt-lg-2 d-none" id="order_Summary">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="customer_summary">
+                    <h1 class="text-center">Order Summary</h1>
+                    <p class="text-center text-muted">Dear Customer, Your order is as follows:</p>
+                    <div>
+                        <p class="text-center" name="Crust"></p>
+                        <p class="text-center" name="Topping"></p>
+                        <p class="text-center" name="Size"></p>
+                        <p class="text-center" name="Quantity"></p>
+                        <p class="text-center" name="Price"></p>
+                    </div>
+                    <div class="checkout-btn">
+                        <button type="button" name="orderBtn" class="btn btn-lg btn-dark">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <!-- container delivery -->
+    <div class="contianer d-none" name="checkout">
+        <h2 class="text-center">Provide location details</h2>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form id="form_delivery">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Name..." required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="txtNumber" class="form-control" placeholder="Phone Number..." required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtLocation" class="form-control" placeholder="Location..." required>
+                    </div>
+                    <button type="submit" name="checkout-btn" class="btn btn-primary">Make Delivery</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- container delivery alert -->
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="alert alert-success d-none mt-lg-5">
+                <div class="alert-body">
+                    <p class="text-center"> Hello <span name="customer_name"></span> Your order has been received and will be delivered in one hour</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Container (Contact Section) -->
+    <div class="container" id="contact">
+        <h2 class="text-center mb-5">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact Us the following channels </p>
+                <p><span class="glyphicon glypicon-map-maker"></span>Nairobi, Kenya</p>
+                <p><span class="glyphicon glypicon-phone"></span>+254719817789</p>
+                <p><span class="glyphicon glypicon-envelope"></span>moseskinyua12@gmail.com</p>
+            </div>
+            <div class="col-sm-7">
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Name..." required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email..." required>
+                        </div>
+                        <textarea id="txtArea" class="form-control"  rows="10" placeholder="Comment"></textarea>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button id="btn" class="btn btn-default pull-left" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!--- Main container ended here-->
+<!-- Footer -->
+<footer>
+    <h5>&copy2021 The Italliano Pizza Joint</h5>
+</footer>
 
 
 
     <script src="./assets/js/jQuery.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

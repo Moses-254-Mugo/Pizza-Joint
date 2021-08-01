@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+.logo {
+  font-size: 18px;
+  margin: .5rem;
+}
+#colortxt {
+  color: yellow;
+  font-size: 22px;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 16px;
+  display: block;
+}
+.menu li a:hover {
+  background-color: yellow;
+  color: #000;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 14px;
+  width: 100%; 
+  margin: 2px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+  .menu {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu li {
+    text-align: center;
+  }
+  .menu li a {
+    padding: 14px 16px;
+  }
+  .menu.active {
+    display: flex;
+  }
+}
+
+/* Style Home Section */
+.banner {
+  background: url("../images/pizzahomepage.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 40px;
+  width: 100%;
+  color: #fff;
+  margin-top: -1.5em;
+}
+#colortxt{
+  color: yellow;
+}
+/* Style gallery section */
+#gallery {
+  padding: 20px;
+  border-bottom: 3px double black;
+}
+.h2-menu{
+  border-bottom: 3px double black;
+  margin-bottom:20px;
+  font-weight: bold;
+
+}
+/* Style order form */
+#order {
+  background-color: #1e1b1e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+}
+.h3-makeOrder{
+  font-weight: bold;
+  margin-top: 30px;
+}
+/* Style Summery form */
+.customer_summary {
+  padding: 20px;
+  /* display: none */
+}
+.checkout-btn {
+  display: flex;
+  justify-content: center;
+}
+/* Style delivery form */
+#form_delivery {
+  background-color: #1e1b1e;
+  padding: 50px;
+  border-radius: 10px;
+}
+input[type="number"] {
+  background: transparent;
+  border: 2px solid #fff;
+}
+#txtName::placeholder,
+#txtNumber::placeholder,
+#txtLocation::placeholder {
+  color: #fff;
+  font-size: 19px;
+}
+
+/* Style contact section */
+#contact {
+  padding: 40px;
+  margin-top: 5px;
+  background: url("../images/footer_image2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: yellow;
+  font-size: 19px;
+}
+input[type="text"],
+input[type="email"],
+#txtArea {
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  margin: 5px;
+}
+#name::placeholder,
+#email::placeholder,
+#txtArea::placeholder {
+  color: yellow;
+  font-size: 19px;
+}
+#btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: yellow;
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  font-size: 0px;
+  background: url('../images/footer_img.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-size: 25px;
+  font-weight: bold;
+}
