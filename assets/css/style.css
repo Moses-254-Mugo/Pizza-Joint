@@ -134,3 +134,13 @@ body {
   padding: 50px;
   border-radius: 10px;
 }
+input[type="number"] {
+  background: transparent;
+  border: 2px solid #fff;
+}
+#txtName::placeholder,
+#txtNumber::placeholder,
+#txtLocation::placeholder {
+  color: #fff;
+  font-size: 19px;
+}
