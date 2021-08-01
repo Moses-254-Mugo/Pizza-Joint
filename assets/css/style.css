@@ -154,3 +154,9 @@ input[type="number"] {
   color: yellow;
   font-size: 19px;
 }
+#btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: yellow;
+  margin-top: 10px;
+}
