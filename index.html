@@ -29,7 +29,7 @@
         </div>
     </nav>
     <!-- Container (Home Section) -->
-    <div class="container" id="home">
+    <div class="container-fluid" id="home">
         <div class="banner">
             <div class="row">
                 <div class="col-sm-6"></div>
@@ -44,7 +44,7 @@
     </div>     
     <!-- Container (Menu Section) -->
     <div class="container" id="gallery">
-        <h2 class="text-center">MENU</h2>
+        <h2 class="text-center h2-menu">MENU</h2>
         <div class="row">
             <div class="col-sm-4 text-center">
                 <div class="thumbnail">
@@ -80,7 +80,7 @@
 
     <!-- Container (Order Section) -->
     <div class="container mt-lg-4" name="order_Section">
-        <h3 class="text-center">Make an Order</h3>
+        <h3 class="text-center h3-makeOrder">Make an Order</h3>
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
@@ -200,20 +200,22 @@
                 <p><span class="glyphicon glypicon-envelope"></span>moseskinyua12@gmail.com</p>
             </div>
             <div class="col-sm-7">
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <input type="text" id="name" class="form-control" placeholder="Name...">
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <input type="email" id="email" class="form-control" placeholder="Email...">
-                    </div>
-                    <textarea id="txtArea" class="form-control"  rows="10" placeholder="Comment"></textarea>
+                <form action="">
                     <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button id="btn" class="btn btn-default pull-left" type="submit">Send</button>
+                        <div class="col-sm-6 form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Name..." required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email..." required>
+                        </div>
+                        <textarea id="txtArea" class="form-control"  rows="10" placeholder="Comment"></textarea>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button id="btn" class="btn btn-default pull-left" type="submit">Send</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

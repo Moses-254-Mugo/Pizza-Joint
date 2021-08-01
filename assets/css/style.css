@@ -100,6 +100,13 @@ body {
 /* Style gallery section */
 #gallery {
   padding: 20px;
+  border-bottom: 3px double black;
+}
+.h2-menu{
+  border-bottom: 3px double black;
+  margin-bottom:20px;
+  font-weight: bold;
+
 }
 /* Style order form */
 #order {
@@ -107,6 +114,10 @@ body {
   color: #fff;
   border-radius: 10px;
   padding: 50px;
+}
+.h3-makeOrder{
+  font-weight: bold;
+  margin-top: 30px;
 }
 /* Style Summery form */
 .customer_summary {
@@ -136,7 +147,7 @@ input[type="number"] {
 
 /* Style contact section */
 #contact {
-  padding: 50px;
+  padding: 40px;
   margin-top: 5px;
   background: url("../images/footer_image2.jpg") no-repeat;
   background-size: cover;
@@ -167,7 +178,12 @@ input[type="email"],
 }
 footer {
   text-align: center;
-  padding: 20px;
-  color: black;
-  font-size: 20px;
+  padding: 40px;
+  color: #fff;
+  font-size: 0px;
+  background: url('../images/footer_img.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-size: 25px;
+  font-weight: bold;
 }

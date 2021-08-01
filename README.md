@@ -9,7 +9,7 @@ Moses Kinyua Mugo
  This is a Web application called Italiano Pizza Joint which is a pizza selling joint, that shows details about the different pizza sold, their menu and also allows customers to order ofr their preferred pizza depending on the size, crust and toppings that one wants and also allows them to input location which they would love the pizza to be delivered to.
 
 ## Screenshot 
-<img src ="" alt="">
+<img src ="./assets/images/pizza-landingPage.PNG" alt="Pizza Landing page">
 
 ## Setup/ Installation Requirements 
 * Clone the repository to your computer form <a href="https://github.com/Moses-254-Mugo/Pizza-Joint">here</a>
