@@ -128,3 +128,9 @@ body {
     display: flex;
     justify-content: center;
   }
+  /* Style delivery form */
+#form_delivery {
+  background-color: #1e1b1e;
+  padding: 50px;
+  border-radius: 10px;
+}
