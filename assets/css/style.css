@@ -90,6 +90,8 @@ body {
     background-position: center;
     padding: 120px 40px;
     width: 100%;
-    /* height: auto; */
     color: #fff;
+  }
+  #colortxt{
+    color: yellow;
   }
