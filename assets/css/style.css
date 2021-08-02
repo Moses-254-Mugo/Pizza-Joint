@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: inherit;
+  background:lavender
 }
 .navbar {
   display: flex;
@@ -94,13 +95,17 @@ body {
   color: #fff;
   margin-top: -1.5em;
 }
-#colortxt{
+.txtHome{
   color: yellow;
+  font-size: 22px;
+  font-weight: bold;
 }
+
 /* Style gallery section */
 #gallery {
   padding: 20px;
   border-bottom: 3px double black;
+  background: #fff;
 }
 .h2-menu{
   border-bottom: 3px double black;
