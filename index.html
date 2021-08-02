@@ -22,9 +22,9 @@
         </a>
         <div class="menu">
             <ul>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#orders">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -35,9 +35,11 @@
                 <div class="col-sm-6"></div>
                 
                 <div class="col-sm-6">
-                    <h1>Welcome to Italliona Pizza!!!</h1>
-                    <p>The best pizza you'll ever get</p>
-                    <p>Make an order of your pizza now will deliver it to your door step.</p>
+                    <div class="txtHome">
+                        <h1>Welcome to Italliona Pizza!!!</h1>
+                        <p>The best pizza you'll ever get</p>
+                        <p>Make an order of your pizza now will deliver it to your door step.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,7 +81,7 @@
     </div>
 
     <!-- Container (Order Section) -->
-    <div class="container mt-lg-4" name="order_Section">
+    <div class="container mt-lg-4" id="orders" name="order_Section">
         <h3 class="text-center h3-makeOrder">Make an Order</h3>
         <div class="row">
             <div class="col-sm-2"></div>
@@ -200,7 +202,7 @@
                 <p><span class="glyphicon glypicon-envelope"></span>moseskinyua12@gmail.com</p>
             </div>
             <div class="col-sm-7">
-                <form action="">
+                <form action="" id="form-contact">
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <input type="text" id="name" class="form-control" placeholder="Name..." required>
@@ -211,7 +213,7 @@
                         <textarea id="txtArea" class="form-control"  rows="10" placeholder="Comment"></textarea>
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <button id="btn" class="btn btn-default pull-left" type="submit">Send</button>
+                                <button id="btn" class="btn btn-default pull-left" id="btn_submit" type="submit">Send</button>
                             </div>
                         </div>
                     </div>
